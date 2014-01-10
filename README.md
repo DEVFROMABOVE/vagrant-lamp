@@ -11,15 +11,7 @@ MAMP turns your Mac into a server. But what happens when you install the latest 
 * Full control of the server. Install any software you like without breaking your Mac.
 * Easy to set up. Installing this environment is as simple as running two shell commands: `$ git clone git@github.com:aaronbushnell/vagrant-lamp.git` and `$ vagrant up`. Vagrant sets the server up exactly how you need it.
 * Easy to tear down. Mess your server up? Just run `$ vagrant destroy` and reinstall. You'll have a brand new environment ready to go.
-
-Installation
-------------
-
-1. Download and install [VirtualBox](http://www.virtualbox.org/)
-2. Download and install [vagrant](http://vagrantup.com/)
-3. Clone this repository `$ git clone git@github.com:aaronbushnell/vagrant-lamp.git`
-4. Launch the box `$ vagrant up`
-5. Point to the server on your Mac by opening `/etc/hosts` in your code editor of choice and add `192.168.33.10 local.dev`
+* MailCatcher. Any emails sent in the Vagrant environment are caught by MailCatcher and can be viewed by going to http://local.dev:1080. No more refreshing your inbox and checking your spam for hours on end.
 
 What's inside
 -------------
@@ -38,8 +30,19 @@ Installed software:
 * [Composer](http://getcomposer.org/)
 * Phing
 
-How to add a new project
---------------------------
+How-to
+------
+
+### Install
+
+1. Download and install [VirtualBox](http://www.virtualbox.org/)
+2. Download and install [vagrant](http://vagrantup.com/)
+3. Clone this repository `$ git clone git@github.com:aaronbushnell/vagrant-lamp.git`
+4. Launch the box `$ vagrant up`
+5. Point to the server on your Mac by opening `/etc/hosts` in your code editor of choice and add `192.168.33.10 local.dev`
+
+### Add a new project
+
 * Clone a project into the `public` directory
 * Add a new [project-name].json file in `data_bags/sites` an example .json file
 
@@ -104,7 +107,7 @@ something like
 so your call to webgrind will not overwrite the file for the process that
 happens to serve webgrind.
 
-### Mailcatcher
+### MailCatcher
 
 All emails sent by PHP are intercepted by MailCatcher. So normally no email would be delivered outside of the virtual machine. Instead you can check messages using web frontend for MailCatcher, which is running on port 1080 and also available on every domain:
 
