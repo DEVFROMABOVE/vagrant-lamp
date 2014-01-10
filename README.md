@@ -13,6 +13,10 @@ MAMP turns your Mac into a server. But what happens when you install the latest 
 * Easy to tear down. Mess your server up? Just run `$ vagrant destroy` and reinstall. You'll have a brand new environment ready to go.
 * MailCatcher. Any emails sent in the Vagrant environment are caught by MailCatcher and can be viewed by going to http://local.dev:1080. No more refreshing your inbox and checking your spam for hours on end.
 
+Caveats
+-------
+* I couldn't run Parallels and VirtualBox simultaneously so you may need to run your IE virtual machines in VirtualBox instead of Parallels. Seems to work just fine and it is free so I don't mind this.
+
 What's inside
 -------------
 
