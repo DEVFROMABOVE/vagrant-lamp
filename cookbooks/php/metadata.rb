@@ -16,7 +16,7 @@ end
 recipe "php", "Installs php"
 recipe "php::package", "Installs php using packages."
 recipe "php::source", "Installs php from source."
-recipe "php::module_apc", "Install the php5-apc package"
+# recipe "php::module_apc", "Install the php5-apc package"
 recipe "php::module_curl", "Install the php5-curl package"
 recipe "php::module_fileinfo", "Install the php5-fileinfo package"
 recipe "php::module_fpdf", "Install the php-fpdf package"

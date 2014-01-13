@@ -37,7 +37,7 @@
     "php": "Installs php",
     "php::package": "Installs php using packages.",
     "php::source": "Installs php from source.",
-    "php::module_apc": "Install the php5-apc package",
+    //"php::module_apc": "Install the php5-apc package",
     "php::module_curl": "Install the php5-curl package",
     "php::module_fileinfo": "Install the php5-fileinfo package",
     "php::module_fpdf": "Install the php-fpdf package",
